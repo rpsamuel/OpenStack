@@ -13,8 +13,7 @@ script:
   - ls -al
   - touch local.conf
   - ls -al
-  - sed '$ a\ 
-  - > ADMIN_PASSWORD=secret' local.conf
+  - echo "ADMIN_PASSWORD=secret" >> local.conf
   - cat local.conf
 ##  - FORCE=yes ./stack.sh
   - my1david
