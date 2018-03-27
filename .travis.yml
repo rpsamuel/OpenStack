@@ -12,5 +12,6 @@ script:
   - cd devstack
   - ls -al
   - FORCE=yes ./stack.sh
+  - my1david
   - cd /opt/stack/tempest
   - ls -al
