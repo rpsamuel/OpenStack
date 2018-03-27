@@ -3,7 +3,7 @@ os :
   - ubuntu
 script:
   - sudo useradd -s /bin/bash -d /opt/stack -m stack
-  - sudo su - 
+
   - git clone https://git.openstack.org/openstack-dev/devstack
   - cd devstack
   - ls -al
