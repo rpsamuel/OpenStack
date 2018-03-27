@@ -11,6 +11,6 @@ script:
   - git clone https://git.openstack.org/openstack-dev/devstack
   - cd devstack
   - ls -al
-  - ./stack.sh
+  - FORCE=yes ./stack.sh
   - cd /opt/stack/tempest
   - ls -al
