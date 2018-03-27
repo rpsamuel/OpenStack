@@ -12,9 +12,11 @@ script:
   - cd devstack
   - ls -al
   - touch local.conf
-  - sed '$ a\ > ADMIN_PASSWORD=secret' local.conf
+  - ls -al
+  - sed '$ a\ 
+  - > ADMIN_PASSWORD=secret' local.conf
   - cat local.conf
-  - FORCE=yes ./stack.sh
+##  - FORCE=yes ./stack.sh
   - my1david
   - cd /opt/stack/tempest
   - ls -al
