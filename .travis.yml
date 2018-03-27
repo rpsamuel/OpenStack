@@ -11,3 +11,5 @@ script:
   - cd devstack
   - ls -al
   - ./stack.sh
+  - cd /opt/stack/tempest
+  - ls -al
