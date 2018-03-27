@@ -19,6 +19,7 @@ script:
   - echo "RABBIT_PASSWORD=secret" >> local.conf
   - echo "SERVICE_PASSWORD=secret" >> local.conf
   - cat local.conf
+  - cp local.conf /home/travis/build/rpsamuel/OpenStack/devstack/.
   - FORCE=yes ./stack.sh
   - cd /opt/stack/tempest
   - ls -al
